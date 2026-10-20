@@ -1,33 +1,52 @@
 * {
 border: 0;
 margin: 0;
+box-sizing: border-box;
+padding: 0;
 }
 body {
     background-color: #ff7417;
     margin: 100px 100px;
 }
-.cabecera .banner {
+.banner {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 align-items: center;
 width: 100%;
-height: 300px;
+height: auto;
+min-height: 250px;
 border: 4px solid silver;
 }
-.button {
+.btn-pstresupueo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: #ff7417;
     border: 1px solid silver;
     border-radius: 55px;
-    width: 25%;
-    height: 30px;
-    margin-top: 25px;
-    margin-left: 160px ;
+    width: 250px;
+    height: 50px;
+    margin: 10px auto;
     text-align: center;
+    font-weight: bold;
+}
+.redes {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.redes a img {
+    display: inline-block;
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
 }
 .menu-navegacion {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     border: 4px solid  #311705;
     background-color:  #312117;
     width: 100%;
@@ -41,9 +60,11 @@ border: 4px solid silver;
     width: 100%;
     height: 80px;
 }
+
 .box, .dos{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
   gap: 1.5rem;
   width: 100%;
   margin-top: 100px;
@@ -52,12 +73,17 @@ border: 4px solid silver;
 
 }
 .somos img {
-    width: 80%;
+    width: 100%;
     border: 4px solid rgb(59, 57, 57);
     border-radius: 120px;
-
+    min-width: 200px;
+    height: auto;
 }
 .titulos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
     color: rgb(99, 93, 93);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 42px;
@@ -66,7 +92,54 @@ border: 4px solid silver;
 
 .informacion {
     font-size: 24px;
-    font-weight: bold;
+    color: #311705;   
+}
+
+/*footer*/
+.piepagina {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 100%; 
+    gap: 20px;
+    justify-content: center;
    
+}
+.lista {
+    display: flex;
+    border: 1px solid silver;
+    background-color: #312117;
+    flex-wrap: wrap;
+    border-radius: 90px;
+    color: white;
+    padding: 40px 20px;
+    justify-content: space-around;
+    min-width: 400px;
+    height: auto;
+
+}
+.lista li {
+    font-size: 12px;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+.imagen-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+     
+}
+.imagen-logo img {
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.map {
+    width: 25%;
+    height: auto;
+    border-radius: 100%;
 }
 
