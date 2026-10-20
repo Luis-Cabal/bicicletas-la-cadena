@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fffaf3">
+    <meta name="description" content="Contacta con AudioLibro. Comparte tus dudas, ideas y sugerencias con nosotros.">
+    <title>🚲 Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+<header>
+    
+</header>
+<main>
+    <!--Trabajo realizado por ELI-->
+    <section class="portada-contacto" aria-labelledby="titulo-contacto">
+        <div class="contenido-contacto">
+             <h1 id="titulo-contacto">Formulario : Bicicletas "La Cadena"</h1>
+            <p class="etiqueta">Incluye el contacto, la localización y el horario.</p><br><br>
+            
+        </div>
+    </section>
+    <section class="contacto" aria-labelledby="titulo-formulario">
+        <div class="encabezado-formulario">
+            <div class="logo">
+            <img class="imagen-logo" src="imagenes/logo.jpg">
+            </div><br><br>
+            <form id="miFormulario" action="contacto.html" method="post">
+                <label form="name">👤Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Introduce tu nombre" size="50"><br><br>
+                <label form="name">📍Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required placeholder="Introduce tu dirección" size="50"><br><br>
+                <label for="correo">📧Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required placeholder="prueba@gmail.com" size="40"><br><br>
+                <label form="name">☎ Teléfono o WhatsApp:</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Introduce tu telefóno" minlength="9" maxlength="9" size="40"><br><br>
+            <!--Campo selección única-->
+            <label for=""><span style="color: red;">*</span>¿Qué opinas de la marca que ofrece Bicicletas la Cadena? </label><br><br>
+            <input type="radio" id="opcion1"> Buena <br><br>
+            <input type="radio" id="opcion2"> Regular <br><br>
+            <input type="radio" id="opcion3"> No recomendada <br><br>
+            <button class="btnBoton" type="button" id="btnLimpiar">Limpiar selección</button><br><br>
+            <label for="name">Observaciones:</label><br><br>
+            <textarea id="mensaje" name="mensaje" rows="8" cols="60" placeholder="Escribe aquí tu mensaje"></textarea><br><br>
+            <button class="btnFormulario" type="submit">Enviar formulario</button>
+            </form>
+        </div>
+        <br>
+        <div class="marco-formulario">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1792434765662!6m8!1m7!1sSJei8lEUg4yU_cuSz9PCFw!2m2!1d43.36310241650589!2d-5.8460249753354!3f77.471596!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <br>
+        <div class="horario">
+            <table>
+                <caption>HORARIO DE APERTURA</caption>
+        <thead>
+            <tr>
+                <th>DÍAS</th>
+                <th>HORAS</th>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>Martes a Viernes</td>
+                <td>De 9:30 a 13:30 y de 16:30 a 20:00</td>
+                </tr>
+                <tr>
+                <td>Sábados</td>
+                <td>De 10:00 a 14:00</td>
+                </tr>
+                <tr>
+                <td>Lunes y Domingos</td>
+                <td>Cerrado</td>
+            </tr>
+            </table>
+        </div>
+    </section>
+    <div class="volver-inicio"><a class="boton" href="#"></a></div>
+</main>
+<footer>
+</footer>
+<script src="contacto.js"></script>
+</body>
+</html>
