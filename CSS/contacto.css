@@ -1,0 +1,124 @@
+/*Trabajo realizado por ELI*/
+
+/* CSS de contacto adaptado al estilo de la página principal */
+
+/*Faltaría introducir la parte de footer, nav y body*/
+
+
+
+
+.imagen-logo {
+    display:block;
+    width: 45%;
+    margin:0 auto;
+    border-radius: 50%;
+   
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,th {
+  border: 1px solid #c43838;
+  padding: 8px;
+  text-align:center;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style:bold;
+}
+
+th {
+  background-color: orange;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+
+}
+
+caption{
+    border:4px solid #c43838;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:22px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+
+
+.contacto {
+    position: relative;
+    width: min(calc(100% - 40px), 900px);
+    margin: -35px auto 0;
+    padding: clamp(24px, 5vw, 44px);
+    background-color: #FFC067;
+    border: 1px solid #d3742b;
+    border-radius: 18px;
+    box-shadow: 0 18px 50px var(--sombra);
+}
+
+
+
+.marco-formulario iframe {
+    display: block;
+    width: 100%;
+    border: 0;
+    background: #fff;
+}
+
+
+.etiqueta{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:40px;
+}
+
+input{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    
+}
+
+textarea{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+label{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.btnFormulario{
+    padding:8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+.btnBoton{
+    padding:8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    
+}
+
+.btnFormulario:hover{
+    background-color: #ea9011;
+    color:whitesmoke;
+    cursor:pointer;
+}
+
+.btnBoton:hover{
+    background-color: #ea9011;
+    color:whitesmoke;
+    cursor:pointer;
+}
