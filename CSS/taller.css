@@ -1,0 +1,299 @@
+/*Trabajamos sobre el mismo body de la página para darle unos bordes*/
+body {
+    background-color: #ff7417;
+    margin: 100px 100px;
+}
+
+/*Los estilos del banner hecho por un compañero, no los toco*/
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    border: 4px solid silver;
+}
+
+.btn-pstresupueo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ff7417;
+    border: 1px solid silver;
+    border-radius: 55px;
+    width: 250px;
+    height: 50px;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.redes {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.redes a img {
+    display: inline-block;
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.menu-navegacion {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 4px solid #311705;
+    background-color: #312117;
+    width: 100%;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.icono {
+    width: 100%;
+    height: 80px;
+}
+
+/*Se establece una serie de color que se usaran a futuro*/
+:root {
+    --antracita: #1E2229;
+    --color-fondo: #F4F6F8;
+    --color-empresa: #ff7417;
+    --color-empresa-apagado: #ff7417a2;
+    --color-boton-activo: #FFC24B;
+    --gris-secundario: #635d5d;
+    --color-botones: #312117;
+}
+
+
+
+
+/*Se emplea los h3 para los títulos de cada apartado, */
+
+
+.tall-superior {
+    margin: 0;
+    position: relative;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.tall-superior img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    opacity: 80%;
+}
+
+/*Los botones de la portada*/
+.tall-superior a {
+    display: inline-block;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.tall-superior div {
+    position: absolute;
+    z-index: 10000;
+    top: 28%;
+    left: 38%;
+    color: white;
+    font-size: 40px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.tall-superior div h3 {
+    text-align: center;
+    font-size: 100%;
+}
+
+/*Los botones de la portada*/
+.tall-superior button {
+    background-color: var(--color-botones);
+    color: white;
+    border-radius: 55px;
+    padding: 10px 20px;
+    margin: 8px 8px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*no tengo mucha confianza en este hover*/
+.tall-superior a:hover {
+    background-color: var(--color-boton-activo);
+    color: var(--color-botones);
+}
+
+.tall-superior a {
+    background-color: var(--color-botones);
+    color: white;
+    border-radius: 55px;
+    padding: 10px 20px;
+    margin: 8px 8px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*En la parte intermedia de la página sea hara una exposición de los hipoteticos servicios*/
+.tall-medio {
+    gap: 2%;
+}
+.tall-medio h2 {
+    font-size: 300%;
+    text-align: center;
+}
+
+.tall-medio>article:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tall-medio>article:nth-child(1)>div {
+    justify-content: center;
+    background-color: var(--gris-secundario);
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 3%;
+}
+.tall-medio>article:nth-child(1)>div h3{
+    text-align: center;
+}
+
+
+.tall-medio>article:nth-child(1)>div div {
+    display: flex;
+
+    overflow: hidden;
+    border-radius: 20px;
+    color: white;
+    padding: 1%;
+}
+
+.tall-medio>article:nth-child(1)>div div ol {
+    text-align: center;
+}
+
+.tall-medio>article:nth-child(1)>div>div div:nth-child(1) {
+    flex-direction: column;
+    flex-basis: 60%;
+    padding-right: 20%;
+}
+
+/*La imagen del latera derecho de la seccion de reparacion*/
+.tall-medio>article:nth-child(1)>div>div div:nth-child(2) {
+    flex-basis: 40%;
+}
+
+.tall-medio>article:nth-child(1)>div>div div:nth-child(2) img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.tall-medio>article:nth-child(1)>div>p {
+    background-color: var(--color-boton-activo);
+    color: var(--color-botones);
+    border-radius: 24px;
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 1%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.tall-medio>article>h3 {
+    margin: 0;
+    padding: 2%;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+.tall-inferior>article:nth-child(1)>div:first-of-type {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+
+.tall-inferior>article:nth-child(1)>div:first-of-type img {
+    width: 20%;
+}
+
+.tall-inferior>article:nth-child(2)>div {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.tall-inferior>article:nth-child(3)>p {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+
+.equipo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*Una categoria de ultima hora para colocar estilos al trabajador y la hija del dueño*/
+.equipo {
+    display: flex;
+    margin-left: 35%;
+    margin-top: 2%;
+
+    gap: 2%;
+}
+
+.ficha-personal {
+    width: 280px;
+    max-width: 100%;
+    margin: 0;
+    background-color: #FFF4E8;
+    color: var(--color-botones);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(49, 33, 23, 0.35);
+}
+
+.ficha-personal img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.ficha-personal p {
+    display: block;
+    font-size: 22px;
+}
+
+.ficha-personal span {
+    display: block;
+    margin-top: 1%;
+    font-size: 15px;
+    color: var(--gris-secundario);
+}
